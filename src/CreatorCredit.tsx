@@ -1,17 +1,18 @@
 const CreatorCredit = () => {
+  const handleClick = () => {
+    window.open('https://www.sekaraa.com', '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <div className="creator-credit">
+    <div
+      className="creator-credit"
+      onClick={handleClick}
+      style={{ cursor: 'pointer' }}
+    >
       <div className="creator-info">
-        <a
-          href="https://www.linkedin.com/in/rgcsekaraa/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="creator-link"
-        >
-          <p>
-            Created by <span className="creator-name">Chan RG</span>
-          </p>
-        </a>
+        <p>
+          Created by <span className="creator-name">Chan RG</span>
+        </p>
       </div>
     </div>
   );
